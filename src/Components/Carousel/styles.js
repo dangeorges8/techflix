@@ -33,7 +33,7 @@ export const ExtraLink = styled.a`
   @media(max-width: 800px) {
     display: block;
     margin-bottom: 16px;
-    margin-left: 6px;
+    margin-left: 0;
   }
 `;
 
@@ -48,16 +48,11 @@ export const VideoCardList = styled.ul`
     margin-bottom: 10px
   }
   &::-webkit-scrollbar-track {
-    background-color: #414141;
+    background-color: #303030;
     border-radius: 5px;
   }
   
   &::-webkit-scrollbar {
     height: 12px;
   }
-  
-  &::-webkit-scrollbar-thumb {
-    border-radius: 5px;
-    background-color: ${({color}) => "#000"};
-  }
-`;
+  `;
