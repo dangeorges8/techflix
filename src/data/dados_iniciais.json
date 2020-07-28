@@ -1,183 +1,175 @@
 {
   "categorias": [
     {
-      "titulo": "Front End",
-      "link": "https://www.alura.com.br/formacao-front-end",
-      "cor": "#6BD1FF",
+      "titulo": "Suspense",
+      "link": "/",
+      "cor": "#3a0071",
       "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
+        "text": "Os melhores filmes de Suspense",
+        "url": "/"
       },
       "videos": [
         {
-          "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+          "titulo": "Parasite (Parasita)",
+          "url": "https://www.youtube.com/watch?v=xWEf44OcU1w"
         },
         {
-          "titulo": "SEO com React",
-          "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+          "titulo": "Glass (Vidro)",
+          "url": "https://www.youtube.com/watch?v=oGWa5tp5RLs"
         },
         {
-          "titulo": "Componentização com VanillaJS #AluraMais",
-          "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+          "titulo": "Split (Fragmentado)",
+          "url": "https://www.youtube.com/watch?v=84TouqfIsiI"
         },
         {
-          "titulo": "Pare de chutar e aprenda a display: inline #01",
-          "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+          "titulo": "Unbreakable (Corpo Fechado)",
+          "url": "https://www.youtube.com/watch?v=fNeCB2ALNoA"
         },
         {
-          "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
-          "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+          "titulo": "El Hoyo (O Poço)",
+          "url": "https://www.youtube.com/watch?v=24Lf7fmKIXI"
         },
         {
-          "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
-        },
-        {
-          "titulo": "Novidades do Angular v9",
-          "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
-        },
-        {
-          "titulo": "Base para aprender os frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
-        }        
-      ]
-    },
-    {
-      "titulo": "Back End",
-      "cor": "#00C86F",
-      "link_extra": {
-        "text": "Cursos de Back End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-programacao"
-      },
-      "videos": [
-        {
-          "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-          "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
-        },
-        {
-          "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-          "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
-        },
-        {
-          "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
-          "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
-        },
-        {
-          "titulo": "API: Dicionário do Programador",
-          "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
-        }, 
-        {
-          "titulo": "Usando Git Direito",
-          "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
-        }
-      ]
-    },
-    {
-      "titulo": "Data Science e Inteligência Artificial",
-      "cor": "#9cd33b",
-      "link_extra": {
-        "text": "Cursos de Data Science na Alura",
-        "url": "https://www.alura.com.br/formacao-data-science"
-      },
-      "videos": [
-        {
-          "titulo": "Teste de Turing",
-          "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
-        },
-        {
-          "titulo": "O que é Data Science?",
-          "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
-        },
-        {
-          "titulo": "Melhor forma de aprender Python",
-          "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
-        },
-        {
-          "titulo": "Como ingressar no mercado de Data Science?",
-          "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
-        }
-      ]
-    },
-    {
-      "titulo": "Filmes",
-      "cor": "orange",
-      "videos": [
-        {
-          "titulo": "Interestellar",
-          "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
-        },
-        {
-          "titulo": "Gattaca",
-          "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
-        },
-        {
-          "titulo": "A Chegada",
-          "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
-        },
-        {
-          "titulo": "Feitiço do Tempo",
-          "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
-        }
+          "titulo": "Joker (O Coringa)",
+          "url": "https://www.youtube.com/watch?v=ntSvI2qaRxU"
+        }    
       ]
     },
     {
       "titulo": "Games",
-      "cor": "red",
+      "cor": "#005300",
       "link_extra": {
-        "text": "Formação de Jogos na Alura",
-        "url": "https://www.alura.com.br/formacao-jogos-unity"
+        "text": "Games Incríveis",
+        "url": "/"
       },
       "videos": [
         {
-          "titulo": "Final Fantasy 7",
-          "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+          "titulo": "The Last of Us Part II",
+          "url": "https://www.youtube.com/watch?v=btmN-bWwv0A"
         },
         {
-          "titulo": "Assassins Creed Valhalla",
-          "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+          "titulo": "Counter Strike: Global Offensive",
+          "url": "https://www.youtube.com/watch?v=0IF7-WD3TPY"
         },
         {
-          "titulo": "God of War 4",
-          "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+          "titulo": "Tibia",
+          "url": "https://www.youtube.com/watch?v=OpAaLT_PTCU"
         },
         {
-          "titulo": "Resident Evil 8",
+          "titulo": "RESIDENT EVIL 8",
           "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
-        },
+        }, 
         {
-          "titulo": "Pokémon Let's Go Pikachu/Eevee",
-          "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
+          "titulo": "Grand Theft Auto 6",
+          "url": "https://www.youtube.com/watch?v=P4hlyBKmQCI"
         }
       ]
     },
     {
-      "titulo": "Aprendendo a aprender tecnologia",
-      "cor": "#6b5be2",
+      "titulo": "Ação",
+      "cor": "#7a0000",
       "link_extra": {
-        "text": "Curso sobre aprendizado na Alura",
-        "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
+        "text": "Os Melhores filmes de Ação",
+        "url": "/"
       },
       "videos": [
         {
-          "titulo": "Como estudar melhor?",
-          "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
+          "titulo": "Birds Of Pray (Aves de Rapina)",
+          "url": "https://www.youtube.com/watch?v=_f9PcLUyu78"
         },
         {
-          "titulo": "Faculdade",
-          "url": "https://www.youtube.com/watch?v=jw06H8esyzQ&feature=youtu.be"
+          "titulo": "Capitain Marvel (Capitã Marvel)",
+          "url": "https://www.youtube.com/watch?v=JhY6Yy4wtb4"
         },
         {
-          "titulo": "Frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+          "titulo": "Deadpool",
+          "url": "https://www.youtube.com/watch?v=Q9X-bAE8KTc"
         },
         {
-          "titulo": "A mágica do Aprendizado",
-          "url": "https://www.youtube.com/watch?v=oTEXzpfEpPY"
+          "titulo": "Wonder Woman (Mulher Maravilha)",
+          "url": "https://www.youtube.com/watch?v=1Q8fG0TtVAY"
+        }
+      ]
+    },
+    {
+      "titulo": "Drama",
+      "cor": "orange",
+      "videos": [
+        {
+          "titulo": "ROMA",
+          "url": "https://www.youtube.com/watch?v=FkzidhAg45U"
         },
         {
-          "titulo": "Como aprender a programar?",
-          "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
+          "titulo": "Joker (O Coringa)",
+          "url": "https://www.youtube.com/watch?v=ntSvI2qaRxU"
+        },
+        {
+          "titulo": "Moonlight - Sob a Luz do Luar",
+          "url": "https://www.youtube.com/watch?v=cHy9GJ2TLNY"
+        },
+        {
+          "titulo": "The Help (Histórias Cruzadas)",
+          "url": "https://www.youtube.com/watch?v=aT9eWGjLv6s"
+        }
+      ]
+    },
+    {
+      "titulo": "Comédia",
+      "cor": "blue",
+      "link_extra": {
+        "text": "Para dar umas risadas",
+        "url": "/"
+      },
+      "videos": [
+        {
+          "titulo": "Coco (Viva - A Vida é Uma Festa)",
+          "url": "https://www.youtube.com/watch?v=jGFsHMGnDtI"
+        },
+        {
+          "titulo": "Divertida mente",
+          "url": "https://www.youtube.com/watch?v=w2YRoV--CHo"
+        },
+        {
+          "titulo": "The Proposal (A Proposta)",
+          "url": "https://www.youtube.com/watch?v=pOsXsSaQXrU"
+        },
+        {
+          "titulo": "Murder Mistery (Mistério no Mediterrâneo)",
+          "url": "https://www.youtube.com/watch?v=ZewCCWbPlsY"
+        },
+        {
+          "titulo": "The Intern (Um Senhor Estagiário)",
+          "url": "https://www.youtube.com/watch?v=WNPpSfXGqXU"
+        }
+      ]
+    },
+    {
+      "titulo": "Séries",
+      "cor": "#555",
+      "link_extra": {
+        "text": "Séries de perder o fôlego",
+        "url": "/"
+      },
+      "videos": [
+        {
+          "titulo": "Dark",
+          "url": "https://www.youtube.com/watch?v=6EhDKaWLJgg"
+        },
+        {
+          "titulo": "House of Cards",
+          "url": "https://www.youtube.com/watch?v=kpWMwSSl2PM"
+        },
+        {
+          "titulo": "Black Mirror",
+          "url": "https://www.youtube.com/watch?v=1w8LBG2qbqc"
+        },
+        {
+          "titulo": "Game Of Thrones",
+          "url": "https://www.youtube.com/watch?v=gcTkNV5Vg1E&t=26s"
+        },
+        {
+          "titulo": "Silicon Valley",
+          "url": "https://www.youtube.com/watch?v=lqgM8ZdAqKo"
         }
       ]
     }
