@@ -3,7 +3,7 @@
     {
       "titulo": "Suspense",
       "link": "/",
-      "cor": "#3a0071",
+      "cor": "#4b1182",
       "link_extra": {
         "text": "Os melhores filmes de Suspense",
         "url": "/"
@@ -37,7 +37,7 @@
     },
     {
       "titulo": "Games",
-      "cor": "#005300",
+      "cor": "#227522",
       "link_extra": {
         "text": "Games Incríveis",
         "url": "/"
@@ -67,7 +67,7 @@
     },
     {
       "titulo": "Ação",
-      "cor": "#7a0000",
+      "cor": "#8b1111",
       "link_extra": {
         "text": "Os Melhores filmes de Ação",
         "url": "/"
@@ -115,7 +115,7 @@
     },
     {
       "titulo": "Comédia",
-      "cor": "blue",
+      "cor": "#111177",
       "link_extra": {
         "text": "Para dar umas risadas",
         "url": "/"

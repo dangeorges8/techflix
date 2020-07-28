@@ -1,18 +1,22 @@
 import styled from 'styled-components';
 
+export const VideoCardGroupContainer = styled.section`
+  color: var(--white);
+  min-height: 197px;
+  margin-left: 5%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+`;
+
 export const Title = styled.h3`
-  font-style: normal;
-  font-weight: normal;
   font-size: 35px;
   line-height: 1;
-  margin-bottom: 16px;
-  display: inline-block;
+  font-weight: normal;
   padding: 20px;
-  background: red;
-  line-height: 1;
+  display: inline-block;
   border-radius: 4px;
-
-  @media (max-width: 800px) {
+  margin-bottom: 16px;
+  @media(max-width: 800px) {
     font-size: 18px;
     padding: 10px;
   }
@@ -26,30 +30,34 @@ export const ExtraLink = styled.a`
   &:focus {
     opacity: .5;
   }
-  @media (max-width: 800px) {
+  @media(max-width: 800px) {
     display: block;
     margin-bottom: 16px;
-    margin-left: 0;
+    margin-left: 6px;
   }
 `;
 
 export const VideoCardList = styled.ul`
-  margin: 0;
-  padding-left: 0;
-  padding-bottom: 32px;
   list-style: none;
+  padding-left: 0;
+  margin: 0;
   display: flex;
   overflow-x: auto;
-  flex-direction: row;
-  
   li {
     margin-right: 16px;
+    margin-bottom: 10px
   }
-`;
-
-export const VideoCardGroupContainer = styled.section`
-  color: white;
-  min-height: 197px;
-  margin-left: 5%;
-  margin-bottom: 16px;
+  &::-webkit-scrollbar-track {
+    background-color: #414141;
+    border-radius: 5px;
+  }
+  
+  &::-webkit-scrollbar {
+    height: 12px;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: ${({color}) => "#000"};
+  }
 `;
