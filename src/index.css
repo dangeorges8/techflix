@@ -25,7 +25,6 @@ a {
 
 #root {
   min-height: 100vh;
-  background: orange;
   display: flex;
   flex-direction: column;
 }
