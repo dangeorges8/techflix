@@ -18,12 +18,14 @@ function Home() {
   return (
     <AppWrapper>
       <Menu />
-
+      <div>
       <BannerMain
         videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
         url={dadosIniciais.categorias[0].videos[0].url}
         videoDescription={"Vencedor de 4 Oscars, incluindo o de Melhor Filme e o de Melhor Filme Estrangeiro."}
       />
+      <script src="index.js"></script>
+      </div>
 
       <Carousel
         ignoreFirstVideo
@@ -56,3 +58,5 @@ function Home() {
 }
 
 export default Home;
+
+
