@@ -2,84 +2,68 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../Components/PageDefault';
 import FormField from '../../../Components/FormField';
-import Button, { Wrapper } from './styles';
+import Button from './styles';
+import useForm from '../../../hooks/useForm';
+import { WrapperTitle, WrapperUl } from './styles';
 
 function CadastroCategoria() {
   const valoresIniciais = {
     nome: '',
     descricao: '',
-    cor: '#801DD1',
+    cor: '',
   };
 
-  const [categorias, setCategoria] = useState([]);
-  const [values, setValues] = useState(valoresIniciais);
+  const { handleChange, values, clearForm } = useForm(valoresIniciais);
 
-  function setValue(chave, valor) {
-    setValues({
-      ...values,
-      [chave]: valor,
-    });
-  }
+  const [categorias, setCategorias] = useState([]);
 
-  function handleChange(infoEvent) {
-    const { value } = infoEvent.target;
-    setValue(
-      infoEvent.target.getAttribute('name'),
-      value,
-    );
-	}
-
-	useEffect(() => {
-    if(window.location.href.includes('localhost')) {
-			const URL = window.location.hostname.includes("localhost")
-			? 'http://localhost:8080/categorias'
-			: 'https://trailersflix.herokuapp.com/categorias';
-      fetch(URL)
-       .then(async (respostaDoServer) =>{
-        if(respostaDoServer.ok) {
-          const resposta = await respostaDoServer.json();
-          setCategoria(resposta);
-          return;
-        }
-        throw new Error('Não foi possível pegar os dados');
-       })
-    }
+  useEffect(() => {
+    const URL_TOP = window.location.hostname.includes('localhost')
+      ? 'http://localhost:8080/categorias'
+      : 'https://trailersflix.herokuapp.com/categorias';
+    // E a ju ama variáveis
+    fetch(URL_TOP)
+      .then(async (respostaDoServidor) => {
+        const resposta = await respostaDoServidor.json();
+        setCategorias([
+          ...resposta,
+        ]);
+      });
   }, []);
-
-	console.log(values);
 
   return (
     <PageDefault>
-      <Wrapper>
+      <WrapperTitle>
         Cadastro de Categoria:
         {values.nome}
-      </Wrapper>
+      </WrapperTitle>
 
-      <form onSubmit={function handleSubmit(infoEvent) {
-        infoEvent.preventDefault();
-        console.log('form enviado');
-        setCategoria([
+      <form onSubmit={function handleSubmit(infosDoEvento) {
+        infosDoEvento.preventDefault();
+        setCategorias([
           ...categorias,
           values,
         ]);
-        setValues(valoresIniciais);
+
+        clearForm();
       }}
       >
 
         <FormField
-					label='Nome da Categoria'
-          type="text"
+          label="Nome da Categoria"
           name="nome"
           value={values.nome}
           onChange={handleChange}
         />
+
         <FormField
-					label='Descrição'
+          label="Descrição"
           type="textarea"
           name="descricao"
           value={values.descricao}
           onChange={handleChange}
         />
+
         <FormField
           label="Cor"
           type="color"
@@ -93,24 +77,20 @@ function CadastroCategoria() {
         </Button>
       </form>
 
-			{categorias.length === 0 && (
-			<div>
-				Loading...
-			</div>
-			)}
+      {categorias.length === 0 && (
+        <div>
+          {/* Cargando... */}
+          Loading...
+        </div>
+      )}
 
-      <ul>
-        {categorias.map((categoria, indice) => (
-          <li key={`${categoria}${indice}`}>
-            {categoria.nome}
+      <WrapperUl>
+        {categorias.map((categoria) => (
+          <li key={`${categoria.titulo}`}>
+            {categoria.titulo}
           </li>
         ))}
-      </ul>
-
-      <Link to="/">
-        Ir para Home.
-      </Link>
-
+      </WrapperUl>
     </PageDefault>
   );
 }

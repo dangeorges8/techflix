@@ -8,8 +8,7 @@ export const ContentAreaContainer = styled.section`
   align-items: center;
   justify-content: center;
   position: relative;
-  padding-top: 94px;
- 
+
   @media (max-width: 800px) {
     padding-top: 100px;
     flex-direction: column;
@@ -34,7 +33,7 @@ ContentAreaContainer.Category = styled.h1`
   display: flex;
   align-items: center;
   text-align: center;
-  display: inline-block; 
+  display: inline-block;
   padding: 25px;
   line-height: 1;
   border-radius: 4px;
@@ -70,7 +69,7 @@ export const BannerMainContainer = styled.section`
   height: 85vh;
   position: relative;
   color: var(--white);
-  background-image: ${({ backgroundImage }) => `url(${backgroundImage})`}; 
+  background-image: ${({ backgroundImage }) => `url(${backgroundImage})`};
   background-size: cover;
   background-position: center;
   @media (max-width: 800px) {
@@ -119,8 +118,7 @@ export const WatchButton = styled.button`
   border-color: var(--black);
   transition: opacity .3s;
   display: none;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   @media (max-width: 800px) {
     display: block;
   }

@@ -4,7 +4,6 @@ export const VideoCardContainer = styled.a`
   height: 197px;
   width: 298px;
   border: 2px solid;
-  display: inline-block;
   text-decoration: none;
   background-image: ${({url}) => `url(${url})`};
   background-size: cover;
@@ -14,10 +13,21 @@ export const VideoCardContainer = styled.a`
   transition: font-size .3s;
   font-size: 0px;
   text-justify:bottom;
+	overflow: hidden;
+	cursor: pointer;
+	color: white;
+	position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+  flex: 0 0 298px;
   &:hover,
   &focus {
     opacity: .5;
     font-size: 14px;
+  }
+	&:not(:first-child) {
+    margin-left: 20px;
   }
 `;
 

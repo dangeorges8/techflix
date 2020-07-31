@@ -11,14 +11,14 @@ const Container = styled.ul`
     top: 0;
     bottom: 0;
     margin: auto;
-    width: 50px;
+    width: 30px;
     height: 30px;
     transform: initial;
     &:before {
       font-size: 40px;
     }
   }
-  
+
   .slick-prev {
     left: 0;
   }
@@ -56,4 +56,4 @@ const Slider = ({ children }) => (
   </Container>
 );
 
-export default Slider; 
+export default Slider;

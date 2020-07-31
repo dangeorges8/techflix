@@ -5,7 +5,6 @@ export const LogoImage = styled.img`
 
  @media (max-width: 800px) {
    max-width: 120px;
-
  }
 `;
 
@@ -16,6 +15,7 @@ export const MenuWrapper = styled.nav`
   position: fixed;
   top: 0;
   left: 0;
+	right:0;
   padding-left: 5%;
   padding-right: 5%;
 
@@ -30,5 +30,4 @@ export const MenuWrapper = styled.nav`
     height: 40px;
     justify-content: center;
   }
-
 `;

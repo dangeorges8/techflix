@@ -20,13 +20,14 @@ export const Button = styled.button`
   border-radius: 4px;
   font-weight: bold;
   text-decoration: none;
-	transition: opacity 1s;
+	transition: opacity .3s;
 	margin-left: 5%;
 
   &:hover,
   &:focus {
-    opacity: 0.8;
-	}
-	`;
+    opacity: 0.5;
+  }
+
+`;
 
 export default Button;
