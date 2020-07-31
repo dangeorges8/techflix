@@ -18,17 +18,17 @@ export const Button = styled.button`
 
   &:hover,
   &:focus {
-    opacity: 0.6;
+    opacity: 0.8;
   }
   @media ( max-width: 800px ){
   position: fixed;
   right: 0;
   left: 0;
-  bottom: 0;
+  bottom: 52px;
   background-color: var(--primary);
   outline: 0;
   text-align: center;
-  border: 0;
+  ;
   border-radius: 0;
   }
 `;
