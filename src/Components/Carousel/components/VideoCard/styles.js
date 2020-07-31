@@ -24,5 +24,6 @@ export const VideoCardContainer = styled.a`
 export const VideoCardTitle = styled.h2`
   font-weight:normal;
   margin-top: 160px;
-  opacity: 0.9;
+  margin-left: 10px;
+	opacity: 0.9;
 `;

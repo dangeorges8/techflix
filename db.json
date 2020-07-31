@@ -1,0 +1,16 @@
+{
+	"categorias": [
+		{
+			"id": 1,
+			"nome": "Suspense",
+			"descricao": "Filmes de Suspense",
+			"cor": "#4b1182"
+		},
+		{
+			"id": 2,
+			"nome": "Games",
+			"descricao": "Os melhores Games",
+			"cor": "#227522"
+		}
+	]
+}

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 export const Wrapper = styled.h1`
   padding-top: 20px;
@@ -11,7 +10,6 @@ export const Button = styled.button`
   background: var(--primary);
   border: 1px solid var(--white);
   padding: 16px 24px;
-  margin-top: 20px;
   font-size: 16px;
   border-radius: 4px;
   font-weight: bold;

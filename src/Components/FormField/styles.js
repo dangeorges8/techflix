@@ -1,42 +1,44 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
-  padding-top: 10px;
-  display: flex;
 
-`;
-
-export const Title = styled.title`
-  padding-top: 10px;
-  display: flex;
-  flex-direction: column;
-`;
-
-export const StyledInput = styled.input`
-  width: 400px;
-  height: 40px;
-  flex-direction: column;
-  font-size: 16px;
-  margin-top: 10px;
-  transition: font-size 0.2s;
-
-  &:hover,
-  &:focus{
-    font-size: 12px;
+export const WrapperFormField = styled.div`
+	position: relative;
+  textarea {
+    min-height: 150px;
+  }
+  input[type="color"] {
+    padding-left: 56px;
   }
 `;
 
-export const StyledInput2 = styled.textarea`
-  width: 400px;
-  height: 80px;
-  margin-top: 10px;
-  flex: 1;
-  font-size: 16px;
-  transition: font-size 0.2s;
+export const Label = styled.label`
 
-  &:hover,
-  &:focus{
-    font-size: 12px;
-  }
 `;
 
+export const Input = styled.input`
+background: #53585D;
+  color: #F5F5F5;
+  display: block;
+  width: 100%;
+  height: 57px;
+  font-size: 18px;
+
+  outline: 0;
+  border: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid #53585D;
+
+  padding: 16px 16px;
+  margin-bottom: 45px;
+
+  resize: none;
+  border-radius: 4px;
+  transition: border-color .3s;
+
+  &:focus {
+    border-bottom-color: var(--primary);
+  }
+  &:focus:not([type='color']) + ${Label.Text} {
+    transform: scale(.6) translateY(-10px);
+  }
+`;

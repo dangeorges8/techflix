@@ -1,70 +1,85 @@
-import React, { useState } from 'react';
-import PageDefault from '../../../Components/PageDefault';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import FormField, {FormField2} from '../../../Components/FormField';
-import { Wrapper } from './styles';
-import Button from './styles';
+import PageDefault from '../../../Components/PageDefault';
+import FormField from '../../../Components/FormField';
+import Button, { Wrapper } from './styles';
 
+function CadastroCategoria() {
+  const valoresIniciais = {
+    nome: '',
+    descricao: '',
+    cor: '#801DD1',
+  };
 
-function CadastroCategoria(){
-const valoresIniciais = {
-  nome: '',
-  descricao: '',
-  cor: '#801DD1',
-}
+  const [categorias, setCategoria] = useState([]);
+  const [values, setValues] = useState(valoresIniciais);
 
-const [categorias, setCategoria] = useState([]);
-const [values, setValues] = useState(valoresIniciais);
+  function setValue(chave, valor) {
+    setValues({
+      ...values,
+      [chave]: valor,
+    });
+  }
 
-function setValue(chave,valor) {
-  setValues({
-    ...values,
-    [chave]: valor,
-  })
-}
+  function handleChange(infoEvent) {
+    const { value } = infoEvent.target;
+    setValue(
+      infoEvent.target.getAttribute('name'),
+      value,
+    );
+	}
 
-function handleChange(infoEvent) {
-  const { value } = infoEvent.target;
-  setValue(
-    infoEvent.target.getAttribute('name'),
-    value
-  )
-}
+	useEffect(() => {
+    if(window.location.href.includes('localhost')) {
+      const URL = 'http://localhost:8080/categorias';
+      fetch(URL)
+       .then(async (respostaDoServer) =>{
+        if(respostaDoServer.ok) {
+          const resposta = await respostaDoServer.json();
+          setCategoria(resposta);
+          return;
+        }
+        throw new Error('Não foi possível pegar os dados');
+       })
+    }
+  }, []);
 
-console.log(values)
+	console.log(values);
 
   return (
     <PageDefault>
-      <Wrapper>Cadastro de Categoria: {values.nome}</Wrapper>
-      
-      <form onSubmit={ function handleSubmit(infoEvent) {
+      <Wrapper>
+        Cadastro de Categoria:
+        {values.nome}
+      </Wrapper>
+
+      <form onSubmit={function handleSubmit(infoEvent) {
         infoEvent.preventDefault();
         console.log('form enviado');
         setCategoria([
           ...categorias,
-          values
+          values,
         ]);
-        setValues(valoresIniciais)
-      }}>
-        
+        setValues(valoresIniciais);
+      }}
+      >
+
         <FormField
-          
+					label='Nome da Categoria'
           type="text"
           name="nome"
           value={values.nome}
           onChange={handleChange}
-          placeholder="Nome da Categoria"
         />
-        <FormField2
-          
-          type="text"
+        <FormField
+					label='Descrição'
+          type="textarea"
           name="descricao"
           value={values.descricao}
           onChange={handleChange}
-          placeholder="Descrição"
         />
         <FormField
-          label="Cor: "
+          label="Cor"
           type="color"
           name="cor"
           value={values.cor}
@@ -76,14 +91,18 @@ console.log(values)
         </Button>
       </form>
 
+			{categorias.length === 0 && (
+			<div>
+				Loading...
+			</div>
+			)}
+
       <ul>
-        {categorias.map((categoria, indice) => {
-          return (
-            <li key={`${categoria}${indice}`}>
-              {categoria.nome}
-            </li>
-          )
-        })}
+        {categorias.map((categoria, indice) => (
+          <li key={`${categoria}${indice}`}>
+            {categoria.nome}
+          </li>
+        ))}
       </ul>
 
       <Link to="/">
@@ -91,7 +110,7 @@ console.log(values)
       </Link>
 
     </PageDefault>
-  )
+  );
 }
 
 export default CadastroCategoria;
