@@ -77,7 +77,6 @@ function CadastroVideo() {
       </form>
 
 			<br />
-      <br />
 
       <Button as={Link} to="/cadastro/categoria">
         Nova Categoria
