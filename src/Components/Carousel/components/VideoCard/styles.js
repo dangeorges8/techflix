@@ -11,6 +11,7 @@ export const VideoCardContainer = styled.a`
   border-radius: 10px;
   transition: opacity .3s;
   transition: font-size .3s;
+  transition: transform .3s;
   font-size: 0px;
   text-justify:bottom;
 	overflow: hidden;
@@ -23,8 +24,10 @@ export const VideoCardContainer = styled.a`
   flex: 0 0 298px;
   &:hover,
   &focus {
-    opacity: .5;
-    font-size: 14px;
+    opacity: .6;
+		font-size: 14px;
+		transform: scale(1.01);
+
   }
 	&:not(:first-child) {
     margin-left: 20px;

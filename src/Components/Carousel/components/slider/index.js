@@ -17,8 +17,7 @@ const Container = styled.ul`
     &:before {
       font-size: 40px;
     }
-  }
-
+	}
   .slick-prev {
     left: 0;
   }
