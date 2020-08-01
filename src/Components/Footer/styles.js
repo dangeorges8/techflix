@@ -7,11 +7,11 @@ export const FooterBase = styled.footer`
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 20px;
   color: var(--white);
   text-align: center;
 
   @media (max-width: 800px) {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 `;

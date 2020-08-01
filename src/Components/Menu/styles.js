@@ -9,7 +9,7 @@ export const LogoImage = styled.img`
 `;
 
 export const MenuWrapper = styled.nav`
-  z-index: 10;
+  z-index: 100;
   width: 100%;
   height: 94px;
   position: fixed;

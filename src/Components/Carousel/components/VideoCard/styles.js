@@ -20,23 +20,23 @@ export const VideoCardContainer = styled.a`
 	position: relative;
   display: flex;
   align-items: flex-end;
-  padding: 16px;
+  padding: 1px;
   flex: 0 0 298px;
   &:hover,
   &focus {
     opacity: .6;
-		font-size: 14px;
-		transform: scale(1.01);
+		font-size: 12px;
+		transform: scale(1.1);
 
   }
 	&:not(:first-child) {
     margin-left: 20px;
-  }
+	}
 `;
 
 export const VideoCardTitle = styled.h2`
-  font-weight:normal;
-  margin-top: 160px;
-  margin-left: 10px;
-	opacity: 0.9;
+	font-weight: normal;
+	background-color: rgba(20,20,20, 0.9);
+	opacity: 1;
+	border-radius: 4px;
 `;

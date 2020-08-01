@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const ContentAreaContainer = styled.section`
+	background-color: transparent;
   display: flex;
   margin-left: 5%;
   margin-right: 5%;
@@ -16,6 +17,7 @@ export const ContentAreaContainer = styled.section`
 `;
 
 ContentAreaContainer.Item = styled.div`
+	background-color: transparent;
   width: 50%;
   display: inline-block;
   margin-bottom: 50px;
@@ -47,11 +49,13 @@ ContentAreaContainer.Category = styled.h1`
 
 ContentAreaContainer.Description = styled.p`
   @media (max-width: 800px) {
+		background-color: red;
     display: none;
   }
 `;
 
 ContentAreaContainer.Title = styled.h2`
+background-color: transparent;
   font-style: normal;
   font-weight: 300;
   font-size: 40px;
@@ -66,6 +70,9 @@ ContentAreaContainer.Title = styled.h2`
 `;
 
 export const BannerMainContainer = styled.section`
+	margin-left: -10px;
+	margin-top: -7px;
+	background-color: #f00;
   height: 85vh;
   position: relative;
   color: var(--white);

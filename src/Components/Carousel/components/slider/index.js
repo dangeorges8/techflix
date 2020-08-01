@@ -19,7 +19,7 @@ const Container = styled.ul`
     }
 	}
   .slick-prev {
-    left: 0;
+    left: -20px;
   }
   .slick-next {
     right: 16px;
@@ -27,7 +27,9 @@ const Container = styled.ul`
 `;
 
 export const SliderItem = styled.li`
-  margin-right: 16px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+  margin-left: 16px;
   img {
     margin: 16px;
     width: 298px;

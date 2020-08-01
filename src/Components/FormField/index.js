@@ -14,8 +14,10 @@ const FormFieldWrapper = styled.div`
   }
 `;
 
-const Label = styled.label``;
+const Label = styled.label`
+`;
 Label.Text = styled.span`
+	background-color: transparent;
   color: #E5E5E5;
   height: 57px;
   position: absolute;
